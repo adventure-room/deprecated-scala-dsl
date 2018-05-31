@@ -1,0 +1,25 @@
+<archetype-descriptor xmlns="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0 archetype-descriptor-1.0.0-regex-fix.xsd"
+    name="adventure-template">
+    <requiredProperties>
+        <requiredProperty  key="fullName">
+        </requiredProperty>
+        <requiredProperty key="shortName">
+            <validationRegex>[a-z]{1,10}</validationRegex>
+        </requiredProperty>
+        <requiredProperty key="shortNameCamel">
+        </requiredProperty>
+        <requiredProperty key="description">
+        </requiredProperty>
+        <requiredProperty key="language">
+        </requiredProperty>
+        <requiredProperty key="dslVersion">
+        </requiredProperty>
+    </requiredProperties>
+
+    <fileSets>
+        <fileSet filtered="true" packaged="false" encoding="UTF-8">
+            <directory>src/main/scala</directory>
+        </fileSet>
+    </fileSets>
+</archetype-descriptor>
